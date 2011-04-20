@@ -1,0 +1,7 @@
+#default properties for PortletBrowser
+hide_url=true
+defaultMessage=There is a problem with your URL
+defaultURL=http\://www.natoine.fr/expe_vero/platon.html
+hide_new_windows=true
+defaultHeight=200px
+defaultWidth=100%

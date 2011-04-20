@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+     
+    	<!-- PostGresql connection settings -->
+    <!--	<property name="connection.url">jdbc:postgresql://localhost/firsthibernate</property>
+		<property name="connection.username">postgres</property>
+		<property name="connection.driver_class">org.postgresql.Driver</property>
+		<property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<property name="connection.password">p</property>
+    -->
+		<!-- MySQL connection settings -->
+<!-- 	<property name="connection.url">jdbc:mysql://localhost/jboss_natoine_sete?autoReconnect=true</property>
+		<property name="connection.username">jboss_natoine</property>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.password">antoine151184</property>
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+ -->
+		
+		<!-- Datasource Mysql -->
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="connection.datasource">java:DSnatoine_annotations</property>
+		
+        <!-- HSQL connection settings -->
+        <!-- 
+        <property name="connection.driver_class">org.hsqldb.jdbcDriver</property>
+        <property name="connection.url">jdbc:hsqldb:hsql://localhost</property>
+        <property name="connection.username">sa</property>
+        <property name="connection.password"></property>
+        <property name="dialect">org.hibernate.dialect.HSQLDialect</property>
+		 -->
+		 
+		 <!--To get long connection -->
+		<!-- <property name="c3p0.min_size">5</property>
+		<property name="c3p0.max_size">20</property>
+		<property name="c3p0.timeout">1800</property>
+		<property name="c3p0.max_statements">50</property>
+		<property name="connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
+		 -->
+        <!-- JDBC connection pool (use the built-in) -->
+        <!-- nombre de connections dans le pool -->
+        <!-- <property name="connection.pool_size">1</property> --><!-- Default value -->
+        <!-- <property name="connection.pool_size">30</property>  -->
+
+        <!-- Enable Hibernate's automatic session context management -->
+        <property name="current_session_context_class">thread</property>
+
+        <!-- Disable the second-level cache  -->
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+
+        <!-- Echo all executed SQL to stdout -->
+        <!-- <property name="show_sql">true</property>  -->
+        <property name="show_sql">false</property>
+
+        <!-- Drop and re-create the database schema on startup -->
+        <property name="hbm2ddl.auto">update</property>
+
+		<!-- mapping resource -->
+	  	<!-- 
+	    <mapping resource="org/hibernate/tutorial/domain/Event.hbm.xml"/>
+        <mapping resource="org/hibernate/tutorial/domain/Person.hbm.xml"/>
+		 -->
+		 <!-- List of annotated Class -->
+		 <mapping class="fr.natoine.model_resource.Resource"/>
+		 <mapping class="fr.natoine.model_resource.URI"/>
+		 <mapping class="fr.natoine.model_resource.UriStatus"/>
+		 
+    </session-factory>
+
+</hibernate-configuration>

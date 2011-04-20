@@ -1,0 +1,13 @@
+#default properties for PortletNavigation
+name6=Platon
+url6=http\://www.natoine.fr/expe_vero/platon.html
+name5=Habermas
+url5=http\://www.natoine.fr/expe_vero/jurgenhabermas.html
+url4=http\://www.natoine.fr/expe_vero/georgesgusdorf.html
+name4=Gusdorf
+url3=http\://www.natoine.fr/expe_vero/paulricoeur.html
+name3=Ricoeur
+url2=http\://www.natoine.fr/expe_vero/merleauponty.html
+name2=Merleau-Ponty
+url1=http\://www.natoine.fr/expe_vero/emmanuelkant.html
+name1=Kant

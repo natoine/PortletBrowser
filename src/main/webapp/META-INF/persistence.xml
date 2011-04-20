@@ -1,0 +1,24 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+    http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+   version="1.0">
+   <persistence-unit name="consultation">
+      <properties>
+      <property name="hibernate.ejb.cfgfile"
+               value="/hibernate_consultation_jeu2debat.cfg.xml"/>
+          <!-- <property name="hibernate.ejb.cfgfile"
+               value="/hibernate_annotation.cfg.xml"/>
+                -->
+      </properties>
+   </persistence-unit>
+    <persistence-unit name="resource">
+      <properties>
+      <property name="hibernate.ejb.cfgfile"
+               value="/hibernate_resource_jeu2debat.cfg.xml"/>
+        <!--   <property name="hibernate.ejb.cfgfile"
+               value="/hibernate_resource.cfg.xml"/>
+                -->
+      </properties>
+   </persistence-unit>
+</persistence>

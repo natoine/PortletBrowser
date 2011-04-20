@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployments>
+   <deployment>
+      <instance>
+         <instance-id>PortletWebBrowserInstance</instance-id>
+         <portlet-ref>PortletWebBrowser</portlet-ref>
+      </instance>
+   </deployment>
+   <deployment>
+      <instance>
+         <instance-id>PortletNavigationInstance</instance-id>
+         <portlet-ref>PortletNavigation</portlet-ref>
+      </instance>
+   </deployment>
+</deployments>

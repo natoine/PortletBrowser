@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployments>
+   <deployment>
+      <if-exists>keep</if-exists>
+      <parent-ref>default</parent-ref>
+       <page>
+         <page-name>default</page-name>
+      	<window>
+        	 <window-name>PortletNavigationWindow</window-name>
+        	 <instance-ref>PortletNavigationInstance</instance-ref>
+         	<region>center</region>
+         	<height>0</height>
+      	</window>
+      	<window>
+        	 <window-name>BrowserWindow</window-name>
+        	 <instance-ref>PortletWebBrowserInstance</instance-ref>
+         	<region>center</region>
+         	<height>1</height>
+      	</window>
+      </page>
+   </deployment>
+</deployments>
