@@ -1,0 +1,7 @@
+This project was created during my phd.
+I used it in the development of my application for the ANR Intermed Project : 
+http://intermed.csregistry.org/tiki-index.php
+http://intermed.lirmm.fr/
+
+This project provides a Portlet to browse the Web and create selections on any resource of the web.
+This project provides a Portlet to navigate on the web. You can define a set of URL to navigate through the Web Browser Portlet.
