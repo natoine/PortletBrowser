@@ -1,0 +1,2 @@
+This project provides a Portlet to browse the Web and create selections on any resource of the web.
+This project provides a Portlet to navigate on the web. You can define a set of URL to navigate through the Web Browser Portlet.

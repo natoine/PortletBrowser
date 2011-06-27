@@ -5,7 +5,7 @@
   <artifactId>PortletBrowser</artifactId>
   <version>1.0.0</version>
   <packaging>war</packaging>
-  <name>Portlet 2.0 Maven Archetype Generator</name>
+  <name>fr.natoine.PortletBrowser</name>
   <build>
 		<plugins>
 			<plugin>
